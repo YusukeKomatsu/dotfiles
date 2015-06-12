@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+# Install homebrew if you have not installed yet.
+if ! [ `which brew` ]; then
+    echo 'install homebrew.'
+    xcode-select --install
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+fi
+
+# Install 
+brew install caskroom/cask/brew-cask
+
+# Install editors
+brew cask install coteditor
+brew cask install kobito
+
+# Install browser
+brew cask install google-chrome
+
+# Install communication tools
+brew cask install skype
+brew cask install hipchat
+
+# Install image apps
+brew cask install imagealpha
+brew cask install imageoptim
+
+# developer tools
+virtualbox
+
+# Install utils
+brew cask install google-japanese-ime
+brew cask install magican
+brew cask install xtrafinder
+brew cask install android-file-transfer
+brew cask install alfred
+brew cask alfred link 
