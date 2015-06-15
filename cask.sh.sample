@@ -4,7 +4,7 @@
 if ! [ `which brew` ]; then
     echo 'install homebrew.'
     xcode-select --install
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # Install 
@@ -34,4 +34,4 @@ brew cask install magican
 brew cask install xtrafinder
 brew cask install android-file-transfer
 brew cask install alfred
-brew cask alfred link 
+brew cask alfred link
